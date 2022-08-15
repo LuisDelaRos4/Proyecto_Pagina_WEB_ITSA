@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - CrazyShoes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <style>
+      body {
+        background: rgb(43, 44, 44);
+        background: linear-gradient(
+          to right,
+          rgb(71, 72, 73),
+          rgb(127, 129, 129)
+        );
+      }
+      .bg {
+        background-image: url(img/img_hombres/img5.jpeg);
+        background-position: center center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <!--CONTENEDOR-->
+      <div class="container w-75 bg-secondary mt-5 rounded shadow">
+        <!--UNICA FILA-->
+        <div class="row align-items-stretch">
+          <!--PRIMERA COLUMNA-->
+          <div
+            class="col bg rounded d-none d-lg-block col-md-5 col-lg-5 col-xl-6"
+          ></div>
+          <!--FIN DE PRIMERA COLUMNA-->
+
+          <!--SEGUNDA COLUMNA-->
+          <div class="col bg-white p-5 rounded-end">
+            <div class="text-end">
+              <img src="img/logo.png" width="200" alt="" />
+            </div>
+            <h2 class="fw-bold text-center py-5">Bienvenido A CrazyShoes</h2>
+
+            <!--FORMULARIO DE INICIO DE SESION-->
+            <form role="form" onsubmit="signIn(event);" autocomplete="off">
+              <!--CAMPO EMAIL-->
+              <div class="form-group mb-4">
+                <label for="email" class="form-label">Correo Electronico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="ej: crazyshoes@gmail.com"
+                  required
+                />
+              </div>
+              <!--FIN DE CAMPO EMAIL-->
+
+              <!--CAMPO CONTRASEÑA-->
+              <div class="form-group mb-4">
+                <label for="password" class="form-label">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  name="pwd"
+                  id="pwd"
+                  placeholder="••••••••••••"
+                  required
+                />
+              </div>
+              <!--FIN DE CAMPO CONTRASEÑA-->
+
+              <!--CAMPO MANTENER SESION-->
+              <div class="mb-4 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="connected"
+                />
+
+                <label for="connected" class="form-check-label"
+                  >Mantener Sesion Iniciada</label
+                >
+              </div>
+              <!--FIN DE CAMPO MANTENER SESION-->
+
+              <!--CAMPO INICIAR SESION-->
+              <div class="form-group d-grid">
+                <button type="submit" class="btn btn-primary">Sign In</button>
+              </div>
+              <!--FIN DE CAMPO INICIAR SESION-->
+
+              <!--CAMPO REGISTRATE-->
+              <div class="my-3">
+                <span
+                  >No tienes cuenta?
+                  <a href="html/pagina1.html">Registrate Aqui</a></span
+                >
+              </div>
+              <!---->
+            </form>
+            <!--FIN DE FORMULARIO DE INICIO DE SESION-->
+          </div>
+          <!--FIN DE SEGUNDA COLUMNA-->
+        </div>
+
+        <!--FIN DE UNICA FILA-->
+      </div>
+      <!--FIN DE CONTENEDOR-->
+
+      <!---->
+    </main>
+    <script type="text/javascript" src="js/probando.js"></script>
+  </body>
+</html>

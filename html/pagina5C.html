@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos - CrazyShoes</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <html lang="es">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm bg-light">
+        <div class="container-fluid">
+          <a class="nav-link active" href="../html/pagina2.html"
+            ><h3 class="text-primary">Crazy Shoes</h3></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active mx-4"
+                  aria-current="page"
+                  href="../html/pagina3H.html"
+                  >Hombres</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../html/pagina4M.html">Mujeres</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-4" href="../html/pagina5C.html"
+                  >Contactenos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../html/pagina6N.html">Cotiza tus Shoes</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-primary" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+
+      <section class="d-flex justify-content-center align-items-center">
+        <div class="card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4   p-4"> 
+            <div class="mb-4 d-flex justify-content-start align-items-center">
+              
+                <h4>  <i class="bi bi-people-fill"></i>  Contactenos</h4>
+            </div>
+            <div class="mb-1">
+                <form id = "contacto" >
+                    <div class="mb-4 d-flex justify-content-between"> 
+                        <div>
+                            <label for="nombre"><i class="bi bi-person-circle"></i> Nombre</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre_contactanos" placeholder= "ej: Crazy" required>
+                            <div class="nombre text-danger "></div>
+                        </div>
+                        <div >
+                            <label for="apellido"><i class="bi bi-person-circle"></i>  Apellido</label>
+                            <input type="text" class="form-control" name="apellido" id="apellido_contactanos" placeholder= "ej: Shoes" required>
+                            <div class="apellido text-danger"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="correo"><i class="bi bi-envelope-fill"></i> Correo</label>
+                        <input type="email" class="form-control" name="correo" id="correo_contactanos" placeholder= "ej: crazyshoes@gmail.com" required>
+                        <div class="correo text-danger"></div>
+                        
+                    </div> 
+                  
+                    <div class="mb-4">
+                        <label for="mensaje"> <i class="bi bi-chat-square-text"></i> Mensaje</label>
+                        <textarea name="mensaje" id="mensaje_contactanos" placeholder=" Motivo de la solicitud" class="form-control"></textarea>
+                        <div class="mensaje text-danger"></div>
+                    </div> 
+                    
+                    <div class="col-md-6">
+                        <button type="button" id="btagregar" onclick="contactanos()" class="btn btn-success"> Enviar</button>
+                    </div>
+<br><br>                      
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="../js/bootstrap.min.js"></script>
+    <br>
+
+    <center>
+    <div class="mx-4">Para más información comuníquese con nosotros a través de nuestra línea de WhatsApp o a través de nuestras redes sociales, también puede comunicarse a través de nuestro correo electrónico.<br>
+        Gracias por su colaboración, de parte de Crazy Shoes.
+        ¡Vuelva pronto! <br><br>
+        <i class="bi bi-whatsapp"></i> 300 5597648 <br> <i class="bi bi-envelope"></i> crazyshoes@gmail.com <br><i class="bi bi-instagram"></i> @crazyshoes <br> <i class="bi bi-facebook"></i> Crazy Shoes <br> <i class="bi bi-twitter"></i> CrazyShoes</div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 text-center">
+                  <div class="card" style="width: 30rem;">
+                    <h3>Estamos ubicados en:</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.403933526622!2d-74.82401418573939!3d11.008289692164388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42dae88a770f7%3A0x49e99a8cc8891029!2sViva%20Centro%20Comercial!5e0!3m2!1ses-419!2sco!4v165853 9705181!5m2!1ses-419!2sco" width="560" height="315" class="card-img-top" alt="Card image cap" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <div class="card-body">
+                      </div>
+                 </div>
+             </div>
+        </center>
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc <br> Kra 8-33 #75</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted"><svg class="bi" width="24" height="24"></svg></a><i class="bi bi-envelope"></i> crazyshoes@gmail.com</li>
+            <li class="ms-3"><a class="text-muted"><svg class="bi" width="24" height="24"></svg></a><i class="bi bi-facebook"></i> Crazy Shoes</li>
+            <li class="ms-3"><a class="text-muted" ><svg class="bi" width="24" height="24"></svg></a><i class="bi bi-twitter"></i> CrazyShoes</li><br>
+            <li class="ms-3"><a class="text-muted" ><svg class="bi" width="24" height="24"></svg></a><i class="bi bi-instagram"></i> @crazyshoes</li><br> 
+          </ul>
+        </footer>
+      </div>
+      <script type="text/javascript" src="../js/probando.js"></script>
+</body>
+</html>

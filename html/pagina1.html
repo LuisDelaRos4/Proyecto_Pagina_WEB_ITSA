@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container w-75 bg-secondary mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+          <div class="col">
+            <center>
+              <h2>REGISTRATE</h2>
+              <form role="form" onsubmit="signUp(event);" autocomplete="off">
+                <div class="form-group mb-4">
+                  <label for="text" class="form-label">Nombre Completo</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="fname"
+                    id="fname"
+                    placeholder="juanito perez"
+                    required
+                  />
+                </div>
+                <div class="form-group mb-4">
+                  <label for="email" class="form-label"
+                    >Nombre De Usuario</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="lname"
+                    id="lname"
+                    placeholder="CrazyUsuario00"
+                    required
+                  />
+                </div>
+                <div class="form-group mb-4">
+                  <label for="email" class="form-label"
+                    >Correo Electronico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="crazyUsuario00@gmail.com"
+                    required
+                  />
+                </div>
+                <div class="form-group mb-4">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="pwd"
+                    id="pwd"
+                    placeholder="••••••••••••"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">
+                    Registrar
+                  </button>
+                </div>
+              </form>
+              <br />
+              <p>
+                Ya estas listo? <a href="../index.html">Inicia sesion Aqui</a>
+              </p>
+            </center>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="../js/probando.js"></script>
+  </body>
+</html>
